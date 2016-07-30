@@ -2,13 +2,12 @@
 <html>
 <head>
 <title>Shop</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<meta name=viewport content="width=device-width, initial-scale=0.7">
 </head>
 <body>
 <div class="main">
-<div class="main-content">
-
 <div class="nav">
 <ul>
 <a href="#" id="logout"><li>Register</li></a>
@@ -16,16 +15,15 @@
 <a href="#"><li>Language: <span>English</span> <img src="images/drop.png"></li></a>
 <a href="#"><li>Server status na: <span id="status">online</span> <img src="images/drop.png"></li></a>
 <a href="#"><li>Download game</li></a>
-
 </ul>
+
 <div class="login-block" id="logout">
-<input type="text">
+<input type="text" placeholder="Search">
 <input type="button" value="login" >
 </div>
 
 <div class="login-block">
-<input type="text">
-
+<input type="text" placeholder="Search">
 <div class="logged-info" >
 <li>
 <p>Hi, <span>usernames25</span></p>
@@ -42,69 +40,78 @@
 <div class="logo-image"></div>
 </div>
 
-
-
-
 <div class="menu">
 <ul>
 	<li>
-		<a href="#" title="Новости"><img src="images/news-menu.png">News</a>
+		<a href="#" title="News"><img src="images/news-menu.png">News</a>
 		<ul>
-			<li><a href="#">News 1</a></li>
-			<li><a href="#">News 2</a></li>
+			<li><a href="#">Category one</a></li>
+			<li><a href="#">Weapons</a></li>
+			<li><a href="#">New Maps</a></li>
+			<li><a href="#">Announcements</a></li>
 		</ul>
 	</li>
 	<li>
-		<a href="#" title="Игра"><img src="images/game-menu.png">Game</a>
+		<a href="#" title="Game"><img src="images/game-menu.png">Game</a>
 		<ul>
-			<li><a href="#">Information</a></li>
-			<li><a href="#">About Game</a></li>
-			<li><a href="#">Register</a></li>
-			<li><a href="#">Login</a></li>
+			<li><a href="#">Download the Game</a></li>
+			<li><a href="#">About the Game</a></li>
+			<li><a href="#">Beginners Guide</a></li>
+			<li><a href="#">Knowleadgebase</a></li>
 		</ul>
 	</li>
-	
 	<li>
-		<a href="#" title="Игра"><img src="images/media-menu.png">Media</a>
+		<a href="#" title="Media"><img src="images/media-menu.png">Media</a>
 		<ul>
-			<li><a href="#">Video</a></li>
-			<li><a href="#">Audio</a></li>
-			<li><a href="#">Guides</a></li>
+			<li><a href="#">Screenshots</a></li>
+			<li><a href="#">Videos</a></li>
+			<li><a href="#">Wallpapers</a></li>
 		</ul>
 	</li>
-	
-	
-	
 	<li>
 		<a href="#" title="Community"><img src="images/comm-menu.png">Community</a>
 		<ul>
-			<li><a href="#">Forum 1</a></li>
-			<li><a href="#">Forum 2</a></li>
+			<li><a href="#">Visit Forums</a></li>
+			<li><a href="#">Personal Messages</a></li>
+			<li><a href="#">My Account</a></li>
 		</ul>
 	</li>
-	
-	
 	<li>
-		<a href="#" title="Shop" id="clear"><img src="images/shop-menu.png">Shop</a>
+		<a href="#" title="Shop" class="select clear"><img src="images/shop-menu.png">Shop</a>
 	</li>	
-	
 	<a href="#" title="Register" class="register">Play for free</a>	
-	
 </ul>
 </div>
 
-
+<div class="main-content">
+<div class="main-top">
+<div class="main-header"><span>shop</span></div>
+<ul>
+<li class="prev"><div>1</div> Choose credit pack</li>
+<li class="prev select"><div>2</div> Select payment method</li>
+<li class=""><div>3</div> Confirmation</li>
+</ul>
 </div>
 
+<div class="main-center-background">
+<div class="main-center">
+<div class="content-block"></div>
+<div class="content-block"></div>
+<div class="content-block"></div>
+<div class="content-block"></div>
+<div class="content-block"></div>
+<div class="content-block"></div>
+</div>
+</div>
 
+<div class="main-bottom">
+<div class="pay-phone">
+<p>Want to pay by Phone?</p>
+<p><input type="button" value="Pay by phone" ></p>
+</div>
+</div>
 
-
-
-
-
-
-
-
+</div>
 
 
 
@@ -114,7 +121,68 @@
 </div>
 
 <div class="footer">
+<div class="footer-block">
+
+<div class="footer-logos">
+<img src="images/footer-logo1.png">
+<img src="images/footer-logo2.png">
+<img src="images/footer-logo3.png">
+</div>
+
+<div class="footer-menu">
+<ul>
+	<li>
+		<a href="#" title="News">News</a>
+		<ul>
+			<li><a href="#">Category one</a></li>
+			<li><a href="#">Weapons</a></li>
+			<li><a href="#">New Maps</a></li>
+			<li><a href="#">Announcements</a></li>
+		</ul>
+	</li>
+	<li id="select">
+		<a href="#" title="Game">Game</a>
+		<ul>
+			<li><a href="#">Download the Game</a></li>
+			<li><a href="#">About the Game</a></li>
+			<li id="select"><a href="#">Beginners Guide</a></li>
+			<li><a href="#">Knowleadgebase</a></li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="#" title="Media">Media</a>
+		<ul>
+			<li><a href="#">Screenshots</a></li>
+			<li><a href="#">Videos</a></li>
+			<li><a href="#">Wallpapers</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" title="Forum">Forum</a>
+		<ul>
+			<li><a href="#">Visit Forums</a></li>
+			<li><a href="#">Personal Messages</a></li>
+			<li><a href="#">My Account</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
 <div class="footer-content">
+<ul>
+	<li><a href="#">Terms of service</a></li>
+	<li><a href="#">Privacy policy</a></li>
+	<li><a href="#">legal</a></li>
+	<li><a href="#">imprint</a></li>
+	<li><a href="#">support</a></li>
+</ul>
+<p>© 2014 Crytek GmbH. All rights reserved.</p>
+
+<p>CRYTEK, CRYENGINE, WARFACE and their respective logos are trademarks or registered trademarks of CRYTEK in the EU, the USA and other territories. GFACE and the GFACE logo are trademarks or registered trademarks of GFACE GMBH (an affiliate of CRYTEK) in the EU, the USA and other territories. All other trademarks are the property of their respective owners. The Twitter name, logo, Twitter T, Tweet, and Twitter bird are trademarks of Twitter, Inc. in the USA and other territories. Facebook is a registered trademark of Facebook Inc. YouTube is a registered trademark of YouTube Google, Inc.</p>
+</p>
+<p>we <img src="images/heart.png"> building games for you.</p>
+</div>
 
 </div>
 </div>
