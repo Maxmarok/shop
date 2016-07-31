@@ -3,10 +3,43 @@
 <head>
 <title>Shop</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+		$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+	</script>
+<style>
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('images/spinner.gif') /*no-repeat 50% 50%*/;
+    margin: -16px 0 0 -16px;
+}
+</style>
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<meta name=viewport content="width=device-width, initial-scale=0.7">
+<script src="js/script.js"></script>
+<meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+<div id="page-preloader"><span class="spinner"></span></div>
 <div class="main">
 <div class="nav">
 <ul>
@@ -18,12 +51,12 @@
 </ul>
 
 <div class="login-block" id="logout">
-<input type="text" placeholder="Search">
+<input type="text" placeholder="Search" maxlength="25">
 <input type="button" value="login" >
 </div>
 
 <div class="login-block">
-<input type="text" placeholder="Search">
+<input type="text" placeholder="Search" maxlength="25">
 <div class="logged-info" >
 <li>
 <p>Hi, <span>usernames25</span></p>
@@ -87,28 +120,62 @@
 <div class="main-top">
 <div class="main-header"><span>shop</span></div>
 <ul>
-<li class="prev"><div>1</div> Choose credit pack</li>
-<li class="prev select"><div>2</div> Select payment method</li>
+<li class="prev select"><div>1</div> Choose credit pack</li>
+<li class=""><div>2</div> Select payment method</li>
 <li class=""><div>3</div> Confirmation</li>
 </ul>
 </div>
 
 <div class="main-center-background">
 <div class="main-center">
-<div class="content-block"></div>
-<div class="content-block"></div>
-<div class="content-block"></div>
-<div class="content-block"></div>
-<div class="content-block"></div>
-<div class="content-block"></div>
+
+<div class="content-block" id="block1">
+<div class="purchase"><a>purchase now</a></div>
+<div class="price"><p>5000 kredits</p><p>99.49 $</p></div>
+</div>
+<div class="content-block" id="block2">
+<div class="purchase"><a>purchase now</a></div>
+<div class="price-banner"><div><p>this package ranked</p><p>most popular</p></div></div>
+<div class="price"><p>2800 kredits</p><p>49.49 $</p></div>
+</div>
+<div class="content-block" id="block3">
+<div class="purchase"><a>purchase now</a></div>
+<div class="price"><p>1500 kredits</p><p>29.49 $</p></div>
+</div>
+<div class="content-block" id="block4">
+<div class="purchase"><a>purchase now</a></div>
+<div class="price-banner"><div><p>this package ranked</p><p>best value</p></div></div>
+<div class="price"><p>800 kredits</p><p>12.49 $</p></div>
+</div>
+<div class="content-block" id="block5">
+<div class="purchase"><a>purchase now</a></div>
+<div class="price"><p>400 kredits</p><p>6.49 $</p></div>
+</div>
+<div class="content-block" id="block6">
+<div class="custom-enter"><p>Enter custom currency amount:</p></div>
+<input type="number" class="custom-kredit" maxlength="15"></input>
+<input type="text" class="custom-dollar" disabled="disabled"></input>
+<div class="custom-gamb"><img src="images/gamb.png"></div>
+<div class="custom-purchase"><a>purchase now</a></div>
+</div>
+
 </div>
 </div>
 
 <div class="main-bottom">
 <div class="pay-phone">
+<ul>
 <p>Want to pay by Phone?</p>
 <p><input type="button" value="Pay by phone" ></p>
+</ul>
+<ul class="legal">
+<li><p>&nbsp;</p><p><a href="#">Redeem code</a></p><p><a href="#">Customer Support</a></p></li>
+<li><p>©Xsolla, 2014</p><p>Secure connection</p><p><a href="#">User agreement</a></p></li>
+<li><img src="images/legal.png"></li>
+</ul>
 </div>
+
+
 </div>
 
 </div>
