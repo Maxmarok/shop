@@ -8,12 +8,16 @@ $(document).ready(function(){
 			$(this).find('.purchase').fadeOut(100);
 		});
 	});
-});
 
-$(document).ready(function(){
 	var kredit = $('.custom-kredit');
 	var dollar = $('.custom-dollar');
 	kredit.keyup(function() {
-			dollar.val((kredit.val()/71.77).toFixed(2) + ' $');
+		dollar.val((kredit.val()/71.77).toFixed(2) + ' $');
+	});
+
+	$(function() {
+		$('#pull').on('click', function() {
+			$('.nav-adaptive ul').slideToggle();
+		});
 	});
 });

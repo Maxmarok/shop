@@ -34,21 +34,22 @@
 }
 </style>
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/adaptive.css" type="text/css">
 <script src="js/script.js"></script>
-<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=viewport content="width=device-width, initial-scale=0.5">
 </head>
 <body>
 
 <div id="page-preloader"><span class="spinner"></span></div>
 <div class="main">
-<div class="nav">
-<ul>
-<a href="#" id="logout"><li>Register</li></a>
-<a href="#"><li>Support</li></a>
-<a href="#"><li>Language: <span>English</span> <img src="images/drop.png"></li></a>
-<a href="#"><li>Server status na: <span id="status">online</span> <img src="images/drop.png"></li></a>
-<a href="#"><li>Download game</li></a>
-</ul>
+<div class="nav-normal">
+	<ul>
+		<a href="#" title="Register" id="logout"><li>Register</li></a>
+		<a href="#" title="Support"><li>Support</li></a>
+		<a href="#" title="Language"><li>Language: <span>English</span> <img src="images/drop.png"></li></a>
+		<a href="#" title="Server status"><li>Server status na: <span id="status">online</span> <img src="images/drop.png"></li></a>
+		<a href="#" title="Download game"><li>Download game</li></a>
+	</ul>
 
 <div class="login-block" id="logout">
 <input type="text" placeholder="Search" maxlength="25">
@@ -67,6 +68,24 @@
 </div>
 
 </div>
+
+<div class="nav-adaptive">
+	<ul>
+		<a href="#" title="Register" id="logout"><li>Register</li></a>
+		<a href="#" title="Support"><li>Support</li></a>
+		<a href="#" title="Language"><li>Language: <span>English</span></li></a>
+		<a href="#" title="Server status"><li>Server status na: <span id="status">online</span></li></a>
+		<a href="#" title="Download game"><li>Download game</li></a>
+		<a href="#" title="News"><li>News</li></a>
+		<a href="#" title="Game"><li>Game</li></a>
+		<a href="#" title="Media"><li>Media</li></a>
+		<a href="#" title="Community"><li>Community</li></a>
+		<a href="#" title="Shop"><li>Shop</li></a>
+		<a href="#" title="Register" class="register"><li>Play for free</li></a>	
+	</ul>
+<a id="pull"></a>
+</div>
+
 
 <div class="logo">
 <p>Free online first person shooter</p>
@@ -152,11 +171,13 @@
 <div class="price"><p>400 kredits</p><p>6.49 $</p></div>
 </div>
 <div class="content-block" id="block6">
-<div class="custom-enter"><p>Enter custom currency amount:</p></div>
+<div class="custom-text"><p>Enter custom currency amount:</p></div>
+<div class="custom-enter">
 <input type="number" class="custom-kredit" maxlength="15"></input>
 <input type="text" class="custom-dollar" disabled="disabled"></input>
 <div class="custom-gamb"><img src="images/gamb.png"></div>
 <div class="custom-purchase"><a>purchase now</a></div>
+</div>
 </div>
 
 </div>
@@ -165,8 +186,10 @@
 <div class="main-bottom">
 <div class="pay-phone">
 <ul>
+<li>
 <p>Want to pay by Phone?</p>
 <p><input type="button" value="Pay by phone" ></p>
+</li>
 </ul>
 <ul class="legal">
 <li><p>&nbsp;</p><p><a href="#">Redeem code</a></p><p><a href="#">Customer Support</a></p></li>

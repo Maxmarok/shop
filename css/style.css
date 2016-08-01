@@ -79,6 +79,7 @@ body{
     letter-spacing: 0.6em;
     text-transform: uppercase;
 	padding-bottom:2%;
+	text-align: center;
 }
 .logo-image{
 	background:url(../images/logo.png) top center no-repeat;
@@ -162,11 +163,12 @@ body{
 #logout{
 	display:none;
 }
-.nav{
+.nav-normal{
     padding-bottom: 140px;
     padding-top: 40px;
+	display:block;
 }
-.nav ul li{
+.nav-normal ul li{
 	float: left;
     margin-right: 43px;
     font-size: 0.8em;
@@ -174,13 +176,37 @@ body{
     color: #d9d7d2;
     letter-spacing: 0.1em;
 }
-.nav ul li #status{
+.nav-normal ul li #status{
 	color: #2ecc71;
 }
-.nav img{
+.nav-normal img{
 	vertical-align:middle;
 }
-.nav ul li:hover{
+.nav-normal ul li:hover{
+	color:#ff3d00;
+}
+
+.nav-adaptive{
+    /*padding-bottom: 140px;
+    padding-top: 40px;*/
+	display:none;
+}
+.nav-adaptive ul li{
+	/*float: left;*/
+    margin: 10px 0;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #d9d7d2;
+    letter-spacing: 0.1em;
+	text-align:center;
+}
+.nav-adaptive ul li #status{
+	color: #2ecc71;
+}
+.nav-adaptive img{
+	vertical-align:middle;
+}
+.nav-adaptive ul li:hover{
 	color:#ff3d00;
 }
 #status{
@@ -358,10 +384,9 @@ body{
     margin: 5px;
     display: inline-block;
     padding: 30px;
+	text-align: left;
 }
-.custom-enter p{
-	position: absolute;
-}
+
 .content-block .price{
     margin-top: 170px;
 	position: absolute;
@@ -394,7 +419,8 @@ body{
     background: #ff7000;
 	cursor:pointer;
 }
-.custom-enter p{
+.custom-text p{
+	position: absolute;
 	text-transform:uppercase;
 }
 .custom-kredit, .custom-dollar{
@@ -409,15 +435,13 @@ body{
 	font: 0.9em robotoB;
 	text-align:center;
 }
-.custom-kredit {
-    -moz-appearance:textfield;
-}
 .custom-kredit::-webkit-inner-spin-button { 
 	display: none;
 }
 .custom-kredit{
 	color:#fff;
 	background:#282c2b;
+	-moz-appearance:textfield;
 }
 .custom-dollar{
 	color:#de3803;
@@ -471,6 +495,9 @@ body{
 	letter-spacing:1px;
 	color:#636463;
 }
+.main-center{
+	text-align:center;
+}
 .main-center #block1{
 	background:url(../images/pic1.png) no-repeat center;
 	background-color:rgba(0,0,0,0.5);
@@ -521,7 +548,6 @@ body{
     outline: none;
     text-transform: uppercase;
     width: 150px;
-    text-align: left;
     font-size: 1em;
 }
 .pay-phone ul:first-child p input[type="button"]:hover{
@@ -533,6 +559,7 @@ body{
 	float:right;
 	margin-top: 25px;
     margin-right: 20px;
+	padding:0;
 }
 .pay-phone .legal li{
 	float:left;
@@ -622,6 +649,9 @@ body{
 }
 .footer-logos img{
 	margin:20px 0;
+}
+.footer-content{
+	display: inline-block;
 }
 .footer-content ul{
 	height: 30px;
